@@ -2,13 +2,21 @@ package com.thoughtworks.basic;
 
 public class Teacher extends Person {
     private String job;
+    private String message;
 
-    public Teacher(String job) {
-        this.job = job;
+    public String getMessage() {
+        return message;
     }
 
-    public Teacher(String name, String age, String job) {
-        super(name, age);
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    public String getJob() {
+        return job;
+    }
+
+    public void setJob(String job) {
         this.job = job;
     }
 

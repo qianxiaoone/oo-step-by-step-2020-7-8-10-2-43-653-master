@@ -9,7 +9,10 @@ public class TeacherTest {
 
     @Test
     public void introduceTest() {
-        Teacher teacher = new Teacher("Matt","30","Teacher");
+        Teacher teacher = new Teacher();
+        teacher.setJob("Teacher");
+        teacher.setAge("30");
+        teacher.setName("Matt");
         Assert.assertEquals("My name is Matt. I am 30 years old. I am a Teacher.",teacher.introduce());
     }
 }
